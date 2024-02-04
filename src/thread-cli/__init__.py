@@ -11,7 +11,7 @@ Copyright (c) 2020, thread.ngjx.org. All rights reserved.
 """
 
 __version__ = "0.1.0"
-from .utils.logging import CoreLogger, logging
+from .utils.logging import ColorLogger, logging
 
 # Export Core
 from .base import cli_base as app
@@ -25,7 +25,7 @@ app.commands(
 
 
 # Setup Logging
-logging.setLoggerClass(CoreLogger)
+logging.setLoggerClass(ColorLogger)
 
 
 # Wildcard export
