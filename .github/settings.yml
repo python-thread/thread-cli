@@ -1,4 +1,8 @@
 labels:
+  - name: "Type: Breaking"
+    color: a90000
+    description: A problem or enhancement related to a breaking change.
+
   - name: "Type: Bug"
     color: e80c0c
     description: Something isn't working as expected.
@@ -78,3 +82,7 @@ labels:
   - name: "Os: Linux"
     color: AEB1C2
     description: Is Linux-specific
+  
+  - name: "Skip-Changelog"
+    color: AEB1C2
+    description: Skip changelog in release tag
