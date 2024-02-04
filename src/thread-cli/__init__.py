@@ -10,7 +10,7 @@ Released under the GPG-3 License
 Copyright (c) 2020, thread.ngjx.org. All rights reserved.
 """
 
-__version__ = "0.1.0"
+__version__ = '0.1.0'
 from .utils.logging import ColorLogger, logging
 
 # Export Core
@@ -18,9 +18,9 @@ from .base import cli_base as app
 from .process import process as process_cli
 
 app.command(
-  name="process",
+  name='process',
   no_args_is_help=True,
-  context_settings={"allow_extra_args": True},
+  context_settings={'allow_extra_args': True},
 )(process_cli)
 
 
@@ -29,4 +29,4 @@ logging.setLoggerClass(ColorLogger)
 
 
 # Wildcard export
-__all__ = ["app"]
+__all__ = ['app']
