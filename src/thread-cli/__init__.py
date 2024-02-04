@@ -1,0 +1,32 @@
+"""
+## ThreadCLI Library
+Documentation: https://thread.ngjx.org
+
+
+---
+
+Released under the GPG-3 License
+
+Copyright (c) 2020, thread.ngjx.org. All rights reserved.
+"""
+
+__version__ = "0.1.0"
+from .utils.logging import CoreLogger, logging
+
+# Export Core
+from .base import cli_base as app
+from .process import process as process_cli
+
+app.commands(
+  name="process",
+  no_args_is_help=True,
+  context_settings={"allow_extra_args": True},
+)(process_cli)
+
+
+# Setup Logging
+logging.setLoggerClass(CoreLogger)
+
+
+# Wildcard export
+__all__ = ["app"]
