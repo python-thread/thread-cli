@@ -6,8 +6,8 @@ authors = ["Alex <contact@ngjx.org>"]
 license = "BSD-3-Clause"
 readme = "README.md"
 packages = [
-  { include = "thread_cli", from = "src" },
-  { include = "thread_cli/py.typed", from = "src" },
+  { include = "thread-cli", from = "src" },
+  { include = "thread-cli/py.typed", from = "src" },
 ]
 include = [{ path = "tests", format = "sdist" }]
 homepage = "https://github.com/python-thread/thread-cli"
