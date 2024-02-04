@@ -17,7 +17,7 @@ from .utils.logging import ColorLogger, logging
 from .base import cli_base as app
 from .process import process as process_cli
 
-app.commands(
+app.command(
   name="process",
   no_args_is_help=True,
   context_settings={"allow_extra_args": True},
