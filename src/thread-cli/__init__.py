@@ -10,7 +10,7 @@ Released under the GPG-3 License
 Copyright (c) 2020, thread.ngjx.org. All rights reserved.
 """
 
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 from .utils.logging import ColorLogger, logging
 
 # Export Core
